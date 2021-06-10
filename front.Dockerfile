@@ -4,11 +4,11 @@ RUN npm install -g http-server
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY front/package*.json ./
 
 RUN npm install
 
-COPY front .
+COPY front/ .
 
 RUN npm run build
 
