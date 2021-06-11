@@ -5,5 +5,7 @@ app = Flask(__name__)
 
 @app.route('/users', methods=["GET"])
 def get_users():
-    users = controllers.get_games()
+    users = controllers.get_users()
     return jsonify(users)
+
+app.run()

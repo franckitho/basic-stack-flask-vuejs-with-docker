@@ -3,22 +3,23 @@ version: '3'
 services: 
     back: 
         build: 
-            context: .
+            context: back/
             dockerfile: back.Dockerfile
-        volumes: 
-            - /back:/app
         networks: 
             - bridge
+        restart: always
     front: 
         build: 
-            context: .
+            context: front/
             dockerfile: front.Dockerfile
-        volumes: 
-            - /front:/app
         ports: 
             - 8080:8080
+        volumes: 
+            - .front/app/:/app
         networks: 
             - bridge
+        restart: always
+
 networks:
     bridge:
      
