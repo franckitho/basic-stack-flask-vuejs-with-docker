@@ -13,9 +13,7 @@ services:
             context: front/
             dockerfile: front.Dockerfile
         ports: 
-            - 8080:8080
-        volumes: 
-            - .front/app/:/app
+            - 6679:80
         networks: 
             - bridge
         restart: always
