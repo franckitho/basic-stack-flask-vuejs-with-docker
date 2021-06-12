@@ -9,7 +9,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 
-@app.route('/users', methods=["GET"])
+@app.route('/api/users', methods=["GET"])
 @cross_origin()
 def get_users():
     users = controllers.get_users()

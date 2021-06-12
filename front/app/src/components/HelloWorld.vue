@@ -28,7 +28,7 @@ export default {
 
   // Fetches posts when the component is created.
   created () {
-    axios.get('http://192.168.144.2:5000/users')
+    axios.get('http://localhost:5000//api/users')
       .then(response => {
         // JSON responses are automatically parsed.
         this.users = response.data

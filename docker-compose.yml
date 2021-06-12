@@ -7,6 +7,8 @@ services:
             dockerfile: back.Dockerfile
         networks: 
             - bridge
+        ports: 
+            - 5000:5000
         restart: always
     front: 
         build: 
@@ -17,6 +19,8 @@ services:
         networks: 
             - bridge
         restart: always
+        depends_on: 
+            - back
 
 networks:
     bridge:
