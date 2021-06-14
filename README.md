@@ -1,4 +1,4 @@
-# A basic app fullstack with flask, vuejs-with and docker !
+# A basic app fullstack with flask, vuejs and docker !
 
 This app is fullstack application with docker compose. Backed is powered by flask python micro framework and the frontend is powered by vueJS javascript framework.
 
